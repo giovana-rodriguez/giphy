@@ -4,8 +4,13 @@
 /* global $ */
 
 $("#search-button").click(function(){
-  
-  
+$.ajax({
+  url: giphy,
+method: "GET",
+  success: function(response) {
+  alert(response);
+      
+  }
   
 });
 
